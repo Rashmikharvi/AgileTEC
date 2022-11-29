@@ -1,10 +1,10 @@
 
       
-   <nav class="navbar navbar-expand-lg shadow  py-4 navbar-white">
+<nav class="navbar navbar-expand-lg shadow  py-4 navbar-white" style="background-color:white;">
   <div class="container-fluid">
        <div class="nav-brand">
-          <a href="index.php"> <img src="img/logo.png" alt="" class="img-fluid" style="height:80px;"></a></div>
-
+          <a href="index.php"> <img src="img/logo.png" alt="" class="img-fluid" style="height:70px;"></a></div>
+<!--           <p class="font" style="font-size:0.5vw;color:#00356B;"><a href="service.php">𝙎𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙩𝙧𝙖𝙞𝙣𝙞𝙣𝙜  | 𝙄𝙣𝙩𝙚𝙧𝙣𝙨𝙝𝙞𝙥 𝙥𝙧𝙤𝙜𝙧𝙖𝙢 |  𝙎𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙢𝙚𝙣𝙩</a></p>-->
     <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

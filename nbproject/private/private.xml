@@ -3,19 +3,69 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/AgileTEC/extra.php</file>
-            <file>file:/C:/xampp/htdocs/AgileTEC/internPgrdetails.php</file>
-            <file>file:/C:/xampp/htdocs/AgileTEC/css/style.css</file>
-            <file>file:/C:/xampp/htdocs/AgileTEC/nav.php</file>
-            <file>file:/C:/xampp/htdocs/AgileTEC/footer.php</file>
-            <file>file:/C:/xampp/htdocs/AgileTEC/agiletec.sql</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/softTraingdetails.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/softTrainingReg.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/indeximg.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/indexbg.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/softwaredevdetail.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/IEEEproReg.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/admin/ajax2.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/admin/IeeeProjectRegdb.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/prof.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/logo.png</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/connection.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/admin/ajax.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/proff3.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/CareerReg.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/card2.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/pro4.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/gal5.png</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/image2.png</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/st3.png</file>
             <file>file:/C:/xampp/htdocs/AgileTEC/header.php</file>
             <file>file:/C:/xampp/htdocs/AgileTEC/index.php</file>
-            <file>file:/C:/xampp/htdocs/AgileTEC/Career2.php</file>
-            <file>file:/C:/xampp/htdocs/AgileTEC/img/build.jpg</file>
-            <file>file:/C:/xampp/htdocs/AgileTEC/connection.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/admin/login.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/card3.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/ContactUS.php</file>
             <file>file:/C:/xampp/htdocs/AgileTEC/Service.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/prof4.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/st2.png</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/admin/SoftwareTrainingRegdb.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/softwaredevReg.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/service.png</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/pro1.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/pro2.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/aboutus.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/prof3.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/Gallerry.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/slogo1.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/st1.png</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/nav.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/agiletec.sql</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/footer.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/card1.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/prof5.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/gal4.png</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/pro3.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/prof2.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/slogo3.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/extra.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/admin/careerRegdb.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/gal1.png</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/image.png</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/proff4.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/internshipReg.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/admin/panel.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/internshipdetails.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/admin/internshipRegdb.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/IEEEprodetail.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/SoftwareProductsdetail.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/gal2.png</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/bg.jpg</file>
             <file>file:/C:/xampp/htdocs/AgileTEC/Career.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/admin/gallerydb.php</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/slogo2.jpg</file>
+            <file>file:/C:/xampp/htdocs/AgileTEC/img/com2.png</file>
         </group>
     </open-files>
 </project-private>

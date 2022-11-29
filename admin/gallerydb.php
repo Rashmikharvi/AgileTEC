@@ -55,13 +55,7 @@
                outline:none;
            }
        
-/*        .btn{
-            background-color:#0CAFFF;
-            color: white;
-            outline: none;
-            border-radius: 20px;
-            width:100%;
-        }*/
+
         .form-control{
             border-radius: 20px;
             border:1px solid black;
@@ -89,13 +83,10 @@
             color:white;
          
         }
-/*        .form_select arrow{
-            color:red;
-        }*/
+
         </style>
         <body>
-       
-          <nav class="navbar navbar-expand-lg navbar-whie">
+        <nav class="navbar navbar-expand-lg navbar-whie">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../admin/panel.php">
                     <img src="../img/logo.png" alt="logo" height="60" />
@@ -108,17 +99,21 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="../admin/panel.php">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../admin/courseRegdb.php">course register</a>
-                        </li>
+                       
                         <li class="nav-item">
                             <a class="nav-link " href="../admin/gallerydb.php">Gallery</a>
                         </li>
                          <li class="nav-item">
                              <a class="nav-link " href="../admin/careerRegdb.php">carrer</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="../admin/ieeeProjectRegdb.php">IEEE projectRegister</a>
+                        </li>
                          <li class="nav-item">
-                            <a class="nav-link " href="../admin/ieeprojectRegdb.php">IEEE projectRegister</a>
+                            <a class="nav-link" href="../admin/SoftwareTrainingRegdb.php">Software training</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="../admin/internshipRegdb.php">internship register</a>
                         </li>
                     </ul>
                     

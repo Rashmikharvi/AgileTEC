@@ -7,86 +7,17 @@
 <?php
     require("header.php");
 ?>
+
+<style>
+.tagline a{
+     text-decoration:none;color:#00356B;
      
-    <style>
-        *{
-            padding:0;
-            margin:0;
-            box-sizing:border-box;
-            
-        }
-/*        navbar*/
-        .nav-link{
-            color:black;
-        }
-        .nav-link:hover{
-            color:#0CAFFF;
-            transition:all 0.5s;
-            font-weight:bold;
-        }
-        
-        .nav-item{
-            color:black;
-            font-weight:500;
-            padding-left:35px;
-        
-        }
-/*        button*/
-         .btn0{
-            height:40px;
-            width:130px;
-            background-color:transparent;
-            color: #0CAFFF;
-            outline:none;
-            border:2px solid #0CAFFF;
-            border-radius: 20px;
-             margin-left:20px;
-           }
-           .btn0:hover{
-               background-color:#0CAFFF;
-               transition:all 0.4s;
-               color:white;border:none;
-               outline:none;
-           }
-       
-    .btn{
-            background-color:#0CAFFF;
-            color: white;
-            outline: none;
-            border-radius: 20px;
-    }
-/*Course Card*/
-.course-card{
-    border: none;
-    max-width: 350px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+ }
+      body{
+    font-family: 'Poppins', sans-serif;
+    background-image:url(img/bg.jpg);
 }
-.course-card h4{
-    font-size: 18px;
-}
-.course-card p{
-    text-align: justify;
-    font-size: 14px;
-}
-.course-card span{
-    font-size: 12px;
-    letter-spacing: 0.5px;
-}
- .footer{
-            background-color:#303030;
-            color:white;
-        }
-        .footer a{
-            text-decoration:none;
-            color:white;
-         
-        }
-         .form-control{
-            border-radius: 20px;
-            border:1px solid black;
-            color:black;
-         }
-          .card{
+ .card{
              transition: transform .2s;
         }
         .card:hover{
@@ -94,19 +25,6 @@
            box-shadow: 0 3px 10px rgba(0 0 0 / 0.2);
            
         }
-        .overlay{
-            margin-top:430px;
-            z-index:9;
-        }    
- .card-img-top {
-width: 100%;
-height: 250px;
-object-fit: cover;  
- }
- .tagline a{
-     text-decoration:none;color:#00356B;
-     
- }
  
     </style>
     <body>
@@ -115,7 +33,7 @@ object-fit: cover;
         <div class="container">
             <div class="row d-flex">
                 <div class="col">
-                    <p class="font" style="font-size:1.5vw;color:#00356B;"><a href="service.php">𝙎𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙩𝙧𝙖𝙞𝙣𝙞𝙣𝙜  | 𝙄𝙣𝙩𝙚𝙧𝙣𝙨𝙝𝙞𝙥 𝙥𝙧𝙤𝙜𝙧𝙖𝙢 |  𝙎𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙢𝙚𝙣𝙩</a></p>
+                   
                 </div>
                 </div>
             </div> 
@@ -125,7 +43,7 @@ object-fit: cover;
                     
 
                 <div class="bg-image w-100 text-center text-white"
-     style="background-image:linear-gradient(rgba(28, 24, 25, 0.7), rgba(11, 20, 96, 0.7)),url('img/building.jpg');object-fit:cover;background-repeat: no-repeat; background-size: cover; background-position: center center;
+     style="background-image:linear-gradient(rgba(28, 24, 25, 0.5), rgba(11, 20, 96, 0.7)),url('img/indexbg.jpg');object-fit:cover;background-repeat: no-repeat; background-size: cover; background-position: center center;
             height:100vh;">
                     
               <div class="d-flex justify-content-center align-items-center h-50 flex-wrap">
@@ -146,26 +64,26 @@ object-fit: cover;
             <section class="services py-4">
                 
                 <div class="container d-flex flex-wrap flex-column">
-                   
-                    <div class="row overlay  text-center mx-4 shadow-lg py-3 bg-white" style="border-radius:20px;">
-                        <div class="col-md-4" style="border-right: solid #bebebe 1px;">
+                   border-radius:20px;"
+                    <div class="row overlay bg-white text-center mx-4" style=" background-image:url(img/bg.jpg);border-radius:20px;">
+                        <div class="col-md-4 bg-white shadow-lg mb-4 pb-2 pt-3" style="border-right: solid #bebebe 1px;border-radius:20px;">
                        
-                        <img src="img/slogo1.jpg" alt="" class="img-fluid">
+                        <img src="img/slogo1.jpg" alt="" class="img-fluid h-50">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti</p>
                         <div class="mx-auto">
-                            <a href="softTrainingReg.php"><input  type="button" class="btn0" style="width:80%;" value="Course registration"></a>
+                            <a href="Service.php"><input  type="button" class="btn0" style="width:80%;" value="Course registration"></a>
                         </div>
                     </div>
                         
-                        <div class="col-md-4" style="border-right: solid #bebebe 1px;">
+                        <div class="col-md-4 shadow-lg mb-4 pb-2 bg-white" style="border-right: solid #bebebe 1px;border-radius:20px;">
                    
-                        <img src="img/slogo2.jpg" alt="" class="img-fluid">
+                        <img src="img/slogo2.jpg" alt="" class="img-fluid h-50">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti</p>
-                        <a href="internshipReg.php"><input  type="button" class="btn0"  style="width:80%;" value="Internship registration"></a>
+                        <a href="Service.php"><input  type="button" class="btn0"  style="width:80%;" value="Internship registration"></a>
                     </div>
-                            <div class="col-md-4">
+                        <div class="col-md-4 shadow-lg mb-4 pb-2 bg-white" style="border-radius:20px;">
                    
-                        <img src="img/slogo3.jpg" alt="" class="img-fluid">
+                        <img src="img/slogo3.jpg" alt="" class="img-fluid h-50">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti</p>
                         <a href="IEEEproReg.php"><input  type="button" class="btn0" style="width:80%;" value="Project Registration"></a>
                     
@@ -173,17 +91,17 @@ object-fit: cover;
                 </div>
                 </div></section>
             
-        <div class="container py-5">
+<!--        <div class="container py-5">
             <div class="row py-5">
                 <div class="col text-center">
                     <p style="color:#00356B;font-weight:bold;font-size:25px;">What We Offer</p>
-                </div></div></div>
+                </div></div></div>-->
         
             
             <div class="container-fluid py-4 my-5">
                 <div class="row py-5 px-4" style="background-color:#00356B;color:white;">
                     <div class="col-md-6 px-4">
-                        <img src="img/a1.jpg"  class="img-fluid" width="500"/>
+                        <img src="img/indeximg.jpg"  class="img-fluid" width="500"/>
                         </div>
                     <div class="col-md-6 px-4 mt-5">
                        <h4 class=" mb-3">We will open the world of knowledge for you!</h4>
@@ -197,7 +115,7 @@ object-fit: cover;
  <div class="container d-flex flex-wrap flex-column">
      <div class="row">
         <div class="col-md-4 mb-3">
-            <div class="card h-100" style="border-radius:20px;">
+            <div class="card h-100" style="border-radius:20px;border:1px solid black;">
                 <img src="img/card1.jpg" class="card-img-top " style="border-top-left-radius:20px;border-top-right-radius:20px;" alt="img"/>
                 <div class="card-body text-center">
                     <div class="card-title">
@@ -206,14 +124,14 @@ object-fit: cover;
                     <div class="card-text">
                     <p> AgileTEC is run by Eminent Industrial Experts. The Training center houses excellent facilities for holding effective training sessions for batches of students.</p>
                     </div></div>
-                <div class="card-footer mx-auto bg-white border-0">
-                    <a href="aboutus.php"><input  type="button" class="btn0" value="Read more"></a>
+                <div class="card-footer mx-auto mb-3 bg-white border-0">
+                    <a href="aboutus.php"><input  type="button" class="btn0 w-100 px-4" value="Read more"></a>
                 </div>
         </div>
         </div>
        
         <div class="col-md-4 mb-3">
-            <div class="card h-100" style="border-radius:20px;">
+            <div class="card h-100" style="border-radius:20px;border:1px solid black;">
                  <img src="img/card2.jpg" class="card-img-top" style="border-top-left-radius:20px;border-top-right-radius:20px;" alt="img"/>
                  <div class="card-body text-center">
                       
@@ -223,26 +141,27 @@ object-fit: cover;
 
                     
             </div>
-                   <div class="card-footer mx-auto bg-white border-0">
-                       <a href="Service.php"><input  type="button" class="btn0" value="Read more"></a>
+                   <div class="card-footer mx-auto mb-3 bg-white border-0">
+                       <a href="Service.php"><input  type="button" class="btn0 w-100 px-4" value="Read more"></a>
                    </div></div>
       </div>
            <div class="col-md-4 mb-3">
-            <div class="card h-100" style="border-radius:20px;">
+            <div class="card h-100" style="border-radius:20px;border:1px solid black;">
                  <img  class="card-img-top" src="img/card3.jpg" style="border-top-left-radius:20px;border-top-right-radius:20px;" alt="img"/>
                  <div class="card-body">
                      <h4 class="text-center">Meet the team</h4>
                      <p class="text-center">AgileTEC is a pioneer in the field of learning with a long history of innovation. Our training team has an incredible corps of experienced trainers.</p>
                  </div>
-                   <div class="card-footer mx-auto bg-white border-0">
-                       <a href="ContactUS.php"><input  type="button" class="btn0" value="Read more" style=""></a>
+                   <div class="card-footer mx-auto bg-white mb-3 border-0">
+                       <a href="ContactUS.php"><input  type="button" class="btn0 w-100 px-4" value="Read more" style=""></a>
                    </div></div>
         </div>
     </div>
  </div>
             <div class="container">
                 <div class="row px-5 py-3">
-            <div id="carouselExampleControls" class="carousel slide w-80 text-center" data-bs-ride="carousel" style="background-color:#00356B;color:white;border-radius:30px;">
+                    <p class="text-center py-4"style="color:#00356B;font-weight:bold;font-size:20px;">See what our students say about their experience</p>
+            <div id="carouselExampleControls" class="carousel slide w-80  text-center" data-bs-ride="carousel" style="background-color:#00356B;color:white;border-radius:30px;">
   <div class="carousel-inner py-5" >
     <div class="carousel-item active">
         <img class="rounded-circle mt-4 mb-4 align-items-center"
@@ -302,31 +221,7 @@ object-fit: cover;
 </div>
             </div>
         
-<!--            <section class="footer mt-5">
-            <div class="container-fluid px-5 py-5">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <p class="h4" style="color:#0CAFFF;">AgileTEC</p>
-                        <p> <a href=""><i class="fa fa-map-marker" style="font-size:30px;color:#0CAFFF"></i></a>   Office.no.4,First floor,Lalbhag,Commercial Complex(Near Mangalore City Corporation),Lalbagh,Mangalore-575003</p>
-                       <p> <a href=""><i class="fa fa-phone" style="font-size:30px;color:#0CAFFF"></i></a>   9876543210, 9786546342</p>
-                    </div>
-                    <div class="col-lg-3 px-4">
-                        <a href="index.php"> Home </a><br><br>
-                        <a href="aboutus.php"> About Us</a><br><br>
-                        <a href="Gallerry.php"> Gallery</a><br><br>
-                    </div>
-                    <div class="col-lg-3 px-4">
-                        <a href="Career.php" >Carrer</a><br><br>
-                        <a href="ContactUS.php">Contact Us</a><br><br>
-                    </div>
-                    <div class="col-lg-3 px-4">
-                        <a href=""><i class="fa fa-whatsapp" style="font-size:24px;"></i></a>
-                        <a href=""><i class="fa fa-instagram" style="font-size:24px;margin-left:10px;"></i></a>
-                        <a href=""><i class="fa fa-facebook" style="font-size:24px;margin-left:10px;"></i></a>
-                </div>
-            </div>
-            </div>
-        </section>-->
+
           <?php include 'footer.php';?>
         <section><div class="container">
                 <div class="row">

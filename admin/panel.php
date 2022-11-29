@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <?php
     require("../connection.php");
     session_start();
@@ -19,6 +15,39 @@ and open the template in the editor.
         
    
         }
+?>
+<?php
+if(isset($_POST['addproductimage'])){
+   
+    $productid=$_POST['productid'];
+    $title=$_POST['imagetitle'];
+    $description=$_POST['description'];
+     $image=$_FILES['image']['name'];
+       $tmpimg = $_FILES['image']['tmp_name'];
+        $folder = "../img/".$image;
+        
+
+ $query56="INSERT INTO productimage 
+	(product_id, 
+	image_title, 
+	image, 
+	description
+	)
+	VALUES
+	('$productid', 
+	'$title', 
+	'$image', 
+	'$description'
+	)";
+        mysqli_query($con, $query56);
+     move_uploaded_file($tmpimg, $folder);
+     if(!$query56){
+        echo'error:'.mysqli_error();
+        }
+        else{
+                echo '<script>alert("image uploaded")</script>';
+        }
+}
 ?>
 <!-- Insert image to about us-->
 
@@ -61,7 +90,7 @@ if(isset($_POST['addaimage'])){
 <!--Insert software taraining Course-->
 <?php
     if(isset($_POST['addscourse'])){
-        $sname = $_POST['sname'];
+        $sname = $_POST['service_name'];
         $level = $_POST['level'];
         $prereq = $_POST['prereq'];
         $duration = $_POST['duration'];
@@ -77,7 +106,7 @@ if(isset($_POST['addaimage'])){
         $folder = "../img/".$simage;
         $folder1 = "../syllabus/".$syllabus;
         
-        $query02 = "INSERT INTO `software training`(`sname`,`level`,`prereq`,`duration`,`exit`,`descrip`,`simg`,`syllabus`)
+        $query02 = "INSERT INTO `softwaretraining`(`service_name`,`level`,`prereq`,`duration`,`exit`,`descrip`,`simg`,`syllabus`)
                  VALUES('$sname','$level','$prereq','$duration','$exit','$descrip','$simage','$syllabus')";
         mysqli_query($con, $query02);
         
@@ -91,7 +120,7 @@ if(isset($_POST['addaimage'])){
 <!--Insert internship program Course-->
 <?php
     if(isset($_POST['addicourse'])){
-        $iname = $_POST['iname'];
+        $iname = $_POST['service_name'];
         $level = $_POST['level'];
         $prere = $_POST['prere'];
         $duration = $_POST['duration'];
@@ -107,7 +136,7 @@ if(isset($_POST['addaimage'])){
         $folder2 = "../img/".$iimage;
         $folder3 = "../syllabus/".$syllabus;
         
-        $query03 = "INSERT INTO `internship program`(`iname`,`level`,`prere`,`duration`,`exit`,`descrip`,`iimg`,`syllabus`)
+        $query03 = "INSERT INTO `internshipprogram`(`service_name`,`level`,`prere`,`duration`,`exit`,`descrip`,`iimg`,`syllabus`)
                  VALUES('$iname','$level','$prere','$duration','$exit','$descrip','$iimage','$syllabus')";
         mysqli_query($con, $query03);
         
@@ -120,62 +149,56 @@ if(isset($_POST['addaimage'])){
 ?>
 <!--Insert software development  Course-->
 <?php
-    if(isset($_POST['addsdcourse'])){
-        $sname = $_POST['sname'];
-        $level = $_POST['level'];
-        $prere = $_POST['prere'];
-        $duration = $_POST['duration'];
-        $exit = $_POST['exit'];
-        $descrip = $_POST['descrip'];
+    if(isset($_POST['addsoftwareproducts'])){
+        $title = $_POST['title'];
+        $platform = $_POST['platform'];
+        $description = $_POST['description'];
+        $technologyused = $_POST['technologyused'];
+      
+
         
-        $simage = $_FILES['simg']['name'];
-        $tmpimg = $_FILES['simg']['tmp_name'];
+        $rimage = $_FILES['rimage']['name'];
+        $tmpimg = $_FILES['rimage']['tmp_name'];
         
-        $syllabus = $_FILES['syllabus']['name'];
-        $tmpsyllabus = $_FILES['syllabus']['tmp_name'];
+
         
-        $folder4 = "../img/".$simage;
-        $folder5 = "../syllabus/".$syllabus;
+        $folder4 = "../img/".$rimage;
+
         
-        $query07 = "INSERT INTO `software development`(`sname`,`level`,`prere`,`duration`,`exit`,`descrip`,`simg`,`syllabus`)
-                 VALUES('$sname','$level','$prere','$duration','$exit','$descrip','$simage','$syllabus')";
+        $query07 = "INSERT INTO `softwareproducts`(`title`,`platform`,`description`,`technology_used`,`image`,is_active)
+                 VALUES('$title','$platform','$description','$technologyused','$rimage',0)";
         mysqli_query($con, $query07);
         
         move_uploaded_file($tmpimg, $folder4);
-        move_uploaded_file($tmpsyllabus, $folder5);
+       
         if($query07){
-            echo '<script>alert("image uploaded")</script>';
+            echo '<script>alert("data submitted ")</script>';
         }
+        else{
+            echo 'error:'.mysqli_error();
+        }
+        
     }
 ?>
 <!--Insert IEEE Project guidence  Course-->
 <?php
     if(isset($_POST['addpcourse'])){
-        $sname = $_POST['pname'];
-        $level = $_POST['level'];
-        $prere = $_POST['prere'];
-        $duration = $_POST['duration'];
-        $exit = $_POST['exit'];
-        $descrip = $_POST['descrip'];
+
+        $tile = $_POST['title'];
+        $platform = $_POST['platform'];
+        $description = $_POST['description'];
         
-        $pimage = $_FILES['pimg']['name'];
-        $tmpimg = $_FILES['pimg']['tmp_name'];
+
         
-        $syllabus = $_FILES['syllabus']['name'];
-        $tmpsyllabus = $_FILES['syllabus']['tmp_name'];
-        
-        $folder6 = "../img/".$pimage;
-        $folder7 = "../syllabus/".$syllabus;
-        
-        $query08 = "INSERT INTO `ieee projectguide`(`pname`,`level`,`prere`,`duration`,`exit`,`descrip`,`pimg`,`syllabus`)
-                 VALUES('$sname','$level','$prere','$duration','$exit','$descrip','$pimage','$syllabus')";
+        $query08 = "INSERT INTO `project_topic`(`title`,`platform`,`description`)
+                 VALUES('$tile','$platform','$description')";
         mysqli_query($con, $query08);
         
-        move_uploaded_file($tmpimg, $folder6);
-        move_uploaded_file($tmpsyllabus, $folder7);
+        
         if($query08){
-            echo '<script>alert("image uploaded")</script>';
+            echo '<script>alert("data submitted")</script>';
         }
+        
     }
 ?>
 
@@ -196,25 +219,25 @@ if(isset($_POST['addaimage'])){
 
 <!--Get Total no of courses-->
 <?php
-    $query2 = "SELECT * FROM `software training`";
+    $query2 = "SELECT * FROM `softwaretraining`";
     $result2 = mysqli_query($con, $query2);
     
     $softwaretraining = mysqli_num_rows($result2);
 ?>
 <?php
-    $query21 = "SELECT * FROM `internship program`";
+    $query21 = "SELECT * FROM `internshipprogram`";
     $result21 = mysqli_query($con, $query21);
     
     $internshiprogram = mysqli_num_rows($result21);
 ?>
 <?php
-    $query22 = "SELECT * FROM `software development`";
+    $query22 = "SELECT * FROM `softwaredevelopment`";
     $result22 = mysqli_query($con, $query22);
     
     $softwaredevelopment = mysqli_num_rows($result22);
 ?>
 <?php
-    $query23 = "SELECT * FROM `ieee projectguide`";
+    $query23 = "SELECT * FROM `ieeeprojectguide`";
     $result23 = mysqli_query($con, $query23);
     
     $ieeeprojectguide = mysqli_num_rows($result23);
@@ -298,13 +321,7 @@ if(isset($_POST['addaimage'])){
                outline:none;
            }
        
-/*        .btn{
-            background-color:#0CAFFF;
-            color: white;
-            outline: none;
-            border-radius: 20px;
-            width:100%;
-        }*/
+
         .form-control{
             border-radius: 20px;
             border:1px solid black;
@@ -332,9 +349,7 @@ if(isset($_POST['addaimage'])){
             color:white;
          
         }
-/*        .form_select arrow{
-            color:red;
-        }*/
+
         </style>
         <body>
        
@@ -351,9 +366,7 @@ if(isset($_POST['addaimage'])){
                         <li class="nav-item">
                             <a class="nav-link active" href="../admin/panel.php">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../admin/courseRegdb.php">course register</a>
-                        </li>
+                       
                         <li class="nav-item">
                             <a class="nav-link " href="../admin/gallerydb.php">Gallery</a>
                         </li>
@@ -361,7 +374,13 @@ if(isset($_POST['addaimage'])){
                              <a class="nav-link " href="../admin/careerRegdb.php">carrer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="../admin/ieeprojectRegdb.php">IEEE projectRegister</a>
+                            <a class="nav-link " href="../admin/ieeeProjectRegdb.php">IEEE projectRegister</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="../admin/SoftwareTrainingRegdb.php">Software training</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="../admin/internshipRegdb.php">internship register</a>
                         </li>
                     </ul>
                     
@@ -397,7 +416,7 @@ if(isset($_POST['addaimage'])){
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="text-info"><?php echo $register; ?></h3>
-                                <p>course Registrations</p>
+                                <p>software training</p>
                             </div>
                         </div>
                     </div>
@@ -405,7 +424,7 @@ if(isset($_POST['addaimage'])){
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="text-info"><?php echo $projectregister; ?></h3>
-                                <p>project Registrations</p>
+                                <p>project and internship Registrations</p>
                             </div>
                         </div>
                     </div>
@@ -448,16 +467,7 @@ if(isset($_POST['addaimage'])){
                 <!-- Row 2 -->
                 <div class="row mb-5 mt-5">
                     <!-- Noticifications -->
-<!--                    <div class="col">
-                        <div class="card">
-                            <form method="POST" class="card-body">
-                                <h3 class="text-primary mb-3">Add Notification</h3>
 
-                                <input type="text" name="msg" class="form-control mb-3" placeholder="Message..." autocomplete="off" required />
-                                <button type="submit" name="addmsg" class="btn btn-primary">Add</button>
-                            </form>
-                        </div>
-                    </div>-->
                           <div class="col">
                         <div class="card">
                             <form method="POST" class="card-body" enctype="multipart/form-data">
@@ -470,6 +480,7 @@ if(isset($_POST['addaimage'])){
                             </form>
                         </div>
                     </div>
+
                     
 
                     <!-- Gallery -->
@@ -486,6 +497,24 @@ if(isset($_POST['addaimage'])){
                             </form>
                         </div>
                     </div>
+
+                     <div class="col">
+                        <div class="card">
+                            <form method="POST" class="card-body" enctype="multipart/form-data">
+                                <h3 class="text-primary mb-3">Add  image to software product</h3>
+
+                                
+                                   <input type="text" name="productid" class="form-control mb-3" placeholder="product_id" autocomplete="off" required/>
+                                   <input type="text" name="imagetitle" class="form-control mb-3" placeholder="image title" autocomplete="off"/>
+                                <input type="file" name="image" class="form-control mb-3" autocomplete="off" required />
+                               
+                               
+                                               <input type="text" name="description" class="form-control mb-3" placeholder="description" autocomplete="off"/>
+                                <button type="submit" name="addproductimage" class="btn btn-primary">Add</button>
+                            </form>
+                        </div>
+                    </div>
+                    
                 </div>
                 
                 <div class="row
@@ -499,7 +528,7 @@ if(isset($_POST['addaimage'])){
                             <form method="POST" class="card-body" enctype="multipart/form-data">
                                 <h5 class="text-primary mb-3">Add software training Course</h5>
 
-                                <input type="text" name="sname" class="form-control mb-3" placeholder="Course Name" autocomplete="off" required />
+                                <input type="text" name="service_name" class="form-control mb-3" placeholder="Course Name" autocomplete="off" required />
                                 <input type="text" name="level" class="form-control mb-3" placeholder="Course Level" autocomplete="off" required />
                                 <input type="text" name="prereq" class="form-control mb-3" placeholder="Prerequisites" autocomplete="off" required />
                                 <input type="text" name="duration" class="form-control mb-3" placeholder="Duration (in hours)" autocomplete="off" required />
@@ -527,7 +556,7 @@ if(isset($_POST['addaimage'])){
                             <form method="POST" class="card-body" enctype="multipart/form-data">
                                 <h5 class="text-primary mb-3">Add internship program Course</h5>
 
-                                <input type="text" name="iname" class="form-control mb-3" placeholder="Course Name" autocomplete="off" required />
+                                <input type="text" name="service_name" class="form-control mb-3" placeholder="Course Name" autocomplete="off" required />
                                 <input type="text" name="level" class="form-control mb-3" placeholder="Course Level" autocomplete="off" required />
                                 <input type="text" name="prere" class="form-control mb-3" placeholder="Prerequisites" autocomplete="off" required />
                                 <input type="text" name="duration" class="form-control mb-3" placeholder="Duration (in hours)" autocomplete="off" required />
@@ -557,26 +586,27 @@ if(isset($_POST['addaimage'])){
                         
                         <div class="card">
                             <form method="POST" class="card-body" enctype="multipart/form-data">
-                                <h5 class="text-primary mb-3">Add software development Course</h5>
+                                <h5 class="text-primary mb-3">Add software development products</h5>
 
-                                <input type="text" name="sname" class="form-control mb-3" placeholder="Course Name" autocomplete="off" required />
-                                <input type="text" name="level" class="form-control mb-3" placeholder="Course Level" autocomplete="off" required />
-                                <input type="text" name="prere" class="form-control mb-3" placeholder="Prerequisites" autocomplete="off" required />
-                                <input type="text" name="duration" class="form-control mb-3" placeholder="Duration (in hours)" autocomplete="off" required />
-                                <input type="text" name="exit" class="form-control mb-3" placeholder="Exit Profile" autocomplete="off" required />
+                                <input type="text" name="title" class="form-control mb-3" placeholder="title" autocomplete="off" required />
+                                <input type="text" name="platform" class="form-control mb-3" placeholder="platform" autocomplete="off" required />
+                              
                                 <div class="mb-3">
-                                    <label for="descrip">Description</label>
-                                    <textarea name="descrip" class="form-control" rows="3" required></textarea>
+                                    <label for="technologyused">Technology used</label>
+                                    <textarea name="technologyused" class="form-control" rows="2" required></textarea>
+                                </div>
+
+                        
+                                <div class="mb-3">
+                                    <label for="description">Description</label>
+                                    <textarea name="description" class="form-control" rows="3" required></textarea>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="simg">Course Image</label>
-                                    <input type="file" name="simg" class="form-control" required />
+                                    <label for="rimage">Course Image</label>
+                                    <input type="file" name="rimage" class="form-control" required />
                                 </div>
-                                <div class="mb-3">
-                                    <label for="syllabus">Course Syllabus</label>
-                                    <input type="file" name="syllabus" class="form-control" required />
-                                </div>
-                                <button type="submit" name="addsdcourse" class="btn btn-primary">Add</button>
+                              
+                                <button type="submit" name="addsoftwareproducts" class="btn btn-primary">Add</button>
                             </form>
                         </div>
                     </div>
@@ -585,25 +615,28 @@ if(isset($_POST['addaimage'])){
                         
                         <div class="card">
                             <form method="POST" class="card-body" enctype="multipart/form-data">
-                                <h5 class="text-primary mb-3">Add IEEE Project guide Course</h5>
+                                <h5 class="text-primary mb-3">Add IEEE Project topic</h5>
 
-                                <input type="text" name="pname" class="form-control mb-3" placeholder="Course Name" autocomplete="off" required />
-                                <input type="text" name="level" class="form-control mb-3" placeholder="Course Level" autocomplete="off" required />
-                                <input type="text" name="prere" class="form-control mb-3" placeholder="Prerequisites" autocomplete="off" required />
-                                <input type="text" name="duration" class="form-control mb-3" placeholder="Duration (in hours)" autocomplete="off" required />
-                                <input type="text" name="exit" class="form-control mb-3" placeholder="Exit Profile" autocomplete="off" required />
+                                <input type="text" name="title" class="form-control mb-3" placeholder="project title" autocomplete="off" required />
+                                 <div class="input-group mb-3">
+                         <select class="form-select" id="inputGroupSelect01" name="platform">
+    <option value="">select platform</option>
+    <option value="Web Application">Web Application</option>
+    <option value="Android App">Android App</option>
+    <option value="Cloud computing">Cloud computing</option>
+     <option value="Hybrid App">Hybrid App</option>
+      <option value="IOT">IOT</option>
+      <option value="Big Data">Big Data</option>
+      
+    
+  </select>
+                          </div>
+                               
                                 <div class="mb-3">
-                                    <label for="descrip">Description</label>
-                                    <textarea name="descrip" class="form-control" rows="3" required></textarea>
+                                    <label for="description">Description</label>
+                                    <textarea name="description" class="form-control" rows="3" required></textarea>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="pimg">Course Image</label>
-                                    <input type="file" name="pimg" class="form-control" required />
-                                </div>
-                                <div class="mb-3">
-                                    <label for="syllabus">Course Syllabus</label>
-                                    <input type="file" name="syllabus" class="form-control" required />
-                                </div>
+
                                 <button type="submit" name="addpcourse" class="btn btn-primary">Add</button>
                             </form>
                         </div>
