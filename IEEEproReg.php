@@ -31,7 +31,7 @@
     <body>
 
 <?php require("nav.php");?>
-        <section class="hhh mx-3">
+<!--        <section class="hhh mx-3">
             <div class="container-fluid py-3 px-4">
                 <div class="row">
                    <div class="col-md-4 align-items-center mx-auto">
@@ -46,10 +46,11 @@
     </p>             </div>
                 
             </div>
-        </section>
+        </section>-->
+        
 
- <div class="container-fluid  ">
-          
+ <section class="p-5">
+     <div class="bg-white p-3">
                  <form method="POST" name="intership" onsubmit="return valIntership();">
 
                       <div class="container-fluid">
@@ -93,45 +94,45 @@
   </select>
                           </div>
                     </div></div></div>
-                        <section class="ddd">
-                           <div class=" container-fluid border px-4  border-dark border-start-0 border-end-0">
-                                <div class="row
-                                     row-cols-xs-1
+                      
+                           <div class=" container-fluid border px-4  border-dark border-start-0 border-end-0 flex-wrap">
+                                <div class="row bg-light mt-3 py-3">
+<!--/*                                     row-cols-xs-1
                                      row-cols-md-3
-                                     row-cols-sm-1 bg-light py-3 mt-3
+                                     row-cols-sm-1 bg-light py-3 mt-3*/
+                                     -->
                                      
-                                     
-                                     ">
-                                    <div class="col">
+                                    
+                                    <div class="col md-4">
                                         <div class="input-group mb-2">
                             <input type="text" class="form-control" placeholder="Name" aria-label="Username" name="sname" aria-describedby="basic-addon1">
    </div>
                                     </div>
                                     
-                                     <div class="col">
+                                     <div class="col-md-4">
                                         <div class="input-group mb-2">
                             <input type="text" class="form-control" placeholder="Email address" aria-label="Username" name="smail" aria-describedby="basic-addon1" >
                                         </div></div>
                                          
                               
-                                    <div class="col">
+                                    <div class="col-md-4">
                                         <div class="input-group mb-2">
                             <input type="text" class="form-control" placeholder="Phone number" aria-label="Username" name="spno" aria-describedby="basic-addon1">
                                         </div></div>
-                                    </div>   
-                                 
-                                <button type="submit" name="intership" class="btn1 bg-white mt-3 py-1 px-3  mb-3">+Add student</button>
-
+                                    </div> </div>  
+                               <div class="col-md-4">
+                                <button type="submit" name="intership" class="btn1 bg-white mt-3 py-1 px-3 w-100 mb-3">REGISTER</button>
+                               </div>
                           
-                           </div>
-                                
-                        </section>        
+                           </form> 
+    </div>
+                            </section> 
         
              
-          <div class="col-md-4 mt-3 mb-3">
+<!--          <div class="col-md-4 mt-3 mb-3">
                              <button type="submit" class="btn w-100">Pay</button>
-                           </div>
-        </form>
+                           </div>-->
+       
 
      <?php require("footer.php");?>
          <section><div class="container">
@@ -140,7 +141,7 @@
                     <p class="fs-6 text-center" style="color:#adb5bd">Copyright@AgileTEC 2022</p>
                 </div> </div></section>
       
- </div>
+
         <?php
             if(isset($_POST['intership'])){
 
