@@ -17,8 +17,8 @@
                     <div class="col-lg-4">
                       
                         <p class="h4" style="color:#0CAFFF;margin-left: 30px;">AgileTEC</p>
-                        <a href=""><i class="fa fa-map-marker" style="font-size:30px;color:#0CAFFF;"></i></a><p style="padding-left: 30px;">  Office.no.4,First floor,Lalbhag,<br>Commercial Complex(Near<br> Mangalore City Corporation),<br>Lalbagh,Mangalore-575003</p>
-                      <a href=""><i class="fa fa-phone" style="font-size:30px;color:#0CAFFF"></i></a><p style="padding-left: 30px;">   9876543210, 9786546342</p>
+                        <div class="row"> <a href=""><i class="fa fa-map-marker" style="font-size:30px;color:#0CAFFF;"></i></a><p style="padding-left: 30px;">  Office.no.4,First floor,Lalbhag,<br>Commercial Complex(Near<br> Mangalore City Corporation),<br>Lalbagh,Mangalore-575003</p></div>
+                        <div class="row">  <a href=""><i class="fa fa-phone" style="font-size:30px;color:#0CAFFF"></i></a><p style="padding-left: 30px;">   9876543210, 9786546342</p></div>
                     </div>
                     <div class="col-lg-3 px-4">
                         <a href="index.php"> home </a><br><br>

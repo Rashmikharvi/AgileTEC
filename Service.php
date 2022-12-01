@@ -50,12 +50,12 @@
             background-color:transparent;
             margin-right: 50px;
             height:40px;
-            width:235px;
+            width:230px;
             text-align:center;
         }
        .btn1:active{
            height:40px;
-            width:235px;
+            width:230px;
             background-color:transparent;
             color: #0CAFFF;
             outline:none;
@@ -63,7 +63,7 @@
             border-radius: 20px;
         }
        .btn1:focus{height:40px;
-            width:235px;
+            width:230px;
             background-color:transparent;
             color: #0CAFFF;
             outline:none;
@@ -72,7 +72,7 @@
             font-weight: bold;
         }
          .btn1:hover{height:40px;
-            width:235px;
+            width:230px;
             background-color:transparent;
             color: #0CAFFF;
             outline:none;
@@ -152,10 +152,10 @@
          <ul class="d-flex navbar ml-0 select px">
 
              <div class="filter" >      
-             <button class=" filter-btn btn1 px-2 mb-2 active" data-target="#block-1" type="submit"><i class="bi bi-mortarboard-fill"></i> Software training</button>
-                          <button class=" filter-btn btn1 px-2 mb-2"  data-target="#block-2" type="submit"><i class="bi bi-mortarboard-fill"></i> Internship program</button>
-                           <button class=" filter-btn btn1 px-2 mb-2"  data-target="#block-3" type="submit"><i class="bi bi-mortarboard-fill"></i> Software development</li></button></li>
-                     <button class=" filter-btn btn1 px-2 mb-2" data-target="#block-4" type="submit"><i class="bi bi-mortarboard-fill"></i> IEEEproject guidence</button>
+             <button class=" filter-btn btn1 px-1 mb-2 active" data-target="#block-1" type="submit"><i class="bi bi-mortarboard-fill"></i> Software training</button>
+                          <button class=" filter-btn btn1 px-1 mb-2"  data-target="#block-2" type="submit"><i class="bi bi-mortarboard-fill"></i> Internship program</button>
+                           <button class=" filter-btn btn1 px-1 mb-2"  data-target="#block-3" type="submit"><i class="bi bi-mortarboard-fill"></i> Software development</li></button></li>
+                     <button class=" filter-btn btn1 px-1 mb-2" data-target="#block-4" type="submit"><i class="bi bi-mortarboard-fill"></i> IEEEproject guidence</button>
              </div>
             
          </ul>

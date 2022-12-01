@@ -2,7 +2,7 @@
 SQLyog Enterprise - MySQL GUI v8.12 
 MySQL - 5.5.5-10.4.21-MariaDB : Database - agiletec
 *********************************************************************
-*/
+*/
 
 /*!40101 SET NAMES utf8 */;
 

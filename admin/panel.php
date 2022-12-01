@@ -231,7 +231,7 @@ if(isset($_POST['addaimage'])){
     $internshiprogram = mysqli_num_rows($result21);
 ?>
 <?php
-    $query22 = "SELECT * FROM `softwaredevelopment`";
+    $query22 = "SELECT * FROM `softwareproducts`";
     $result22 = mysqli_query($con, $query22);
     
     $softwaredevelopment = mysqli_num_rows($result22);
@@ -450,18 +450,18 @@ if(isset($_POST['addaimage'])){
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="text-info"><?php echo $softwaredevelopment ; ?></h3>
-                                <p>software development courses</p>
+                                <p>software products</p>
                             </div>
                         </div>
                     </div>
-                     <div class="col">
+<!--                     <div class="col">
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="text-info"><?php echo $ieeeprojectguide; ?></h3>
                                 <p>IEEE project Courses</p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 
                 <!-- Row 2 -->
